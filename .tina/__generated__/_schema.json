@@ -1,0 +1,122 @@
+{
+  "version": {
+    "fullVersion": "0.59.3",
+    "major": "0",
+    "minor": "59",
+    "patch": "3"
+  },
+  "meta": {},
+  "collections": [
+    {
+      "label": "Blog Posts",
+      "name": "post",
+      "path": "_posts",
+      "fields": [
+        {
+          "type": "string",
+          "label": "Title",
+          "name": "title",
+          "namespace": [
+            "post",
+            "title"
+          ]
+        },
+        {
+          "type": "string",
+          "label": "Excerpt",
+          "name": "excerpt",
+          "namespace": [
+            "post",
+            "excerpt"
+          ]
+        },
+        {
+          "type": "string",
+          "label": "Cover Image",
+          "name": "coverImage",
+          "namespace": [
+            "post",
+            "coverImage"
+          ]
+        },
+        {
+          "type": "string",
+          "label": "Date",
+          "name": "date",
+          "namespace": [
+            "post",
+            "date"
+          ]
+        },
+        {
+          "type": "object",
+          "label": "Author",
+          "name": "author",
+          "fields": [
+            {
+              "type": "string",
+              "label": "Name",
+              "name": "name",
+              "namespace": [
+                "post",
+                "author",
+                "name"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Picture",
+              "name": "picture",
+              "namespace": [
+                "post",
+                "author",
+                "picture"
+              ]
+            }
+          ],
+          "namespace": [
+            "post",
+            "author"
+          ]
+        },
+        {
+          "type": "object",
+          "label": "OG Image",
+          "name": "ogImage",
+          "fields": [
+            {
+              "type": "string",
+              "label": "Url",
+              "name": "url",
+              "namespace": [
+                "post",
+                "ogImage",
+                "url"
+              ]
+            }
+          ],
+          "namespace": [
+            "post",
+            "ogImage"
+          ]
+        },
+        {
+          "type": "string",
+          "label": "Body",
+          "name": "body",
+          "isBody": true,
+          "ui": {
+            "component": "markdown"
+          },
+          "namespace": [
+            "post",
+            "body"
+          ]
+        }
+      ],
+      "namespace": [
+        "post"
+      ]
+    }
+  ]
+}
